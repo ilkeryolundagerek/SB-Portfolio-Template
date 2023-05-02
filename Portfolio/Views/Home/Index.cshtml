@@ -1,0 +1,29 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (Model.Masthead.Show)
+{
+    <partial name="_masthead" model="Model.Masthead" />
+}
+@if (Model.About.Show)
+{
+    <partial name="_about" model="Model.About" />
+}
+@if (Model.ShowServices)
+{
+    <partial name="_services" />
+}
+@if (Model.ShowPortfolio)
+{
+    <partial name="_portfolio" />
+}
+@if (Model.ShowCallToAction)
+{
+    <partial name="_callToAction" />
+}
+@if (Model.ShowContact)
+{
+    <partial name="_contact" />
+}
